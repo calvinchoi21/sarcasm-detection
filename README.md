@@ -1,1 +1,7 @@
-# sarcasm-detection
+# Detecting Sarcasm in Text with NLP
+
+### Introduction 
+The goal of this study is to develop a model that can accurately differentiate sarcastic text from non-sarcastic text. To obtain data for this model, user comments will be scraped from the popular social news website, Reddit. Natural Language Processing (NLP) techniques will be applied for the purpose of text preprocessing and topic modelling. This study will also train and test several supervised learning algorithms to classify sarcastic and non-sarcastic comments. The tools that will be used to accomplish this task including the popular NLP library, Spacy, as well as Scikit-Learn for classification tasks. Other analytical and visualization libraries such as Pandas and Matplotlib are utilized in this study. 
+
+### Data 
+The data used in this study includes a pre-labelled dataset downloaded from Kaggle. As per the author, the dataset contains sarcastic and non-sarcastic comments, labelled as 1 and 0 respectively, that was scraped from Reddit. To accurately identify sarcasm in the comments, the author relied on the Reddit-specific tag /s which users typically utilize to designate sarcasm in their comment. The dataset includes 1,010,774 comments and attributes related to each comment, such as the number of likes, the date it was made, the parent comment, etc. In addition, the original dataset includes a perfect class balance between sarcastic and non-sarcastic comments. Because the models created in this study is intended to be used on text for any source, all Reddit specific data is removed, leaving only the comment. Note, in the modelling stage, the number of instanced is reduced to 50,000 (split evenly between classes) to reduce computation expense and reduce time. 
